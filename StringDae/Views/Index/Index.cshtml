@@ -1,0 +1,41 @@
+﻿@{
+    ViewBag.Title = "New";
+}
+
+<h2>Index</h2>
+@section sidebar {
+    <ul>
+        <li><a href="javascript:showdiv('NewInvestigation');">New</a></li>
+    </ul>
+    <br /> <br /> <br />
+
+    <div id="accordion">
+        <h4>Manage</h4>
+        <div>
+            Team <br />
+            Account <br />
+            Sign Out <br />
+        </div>
+    </div>
+    <!-- End Accordion -->
+}
+
+<div id="NewInvestigation" style="display: none">
+    @using (Html.BeginForm())
+    {
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td>@Html.TextBox(name: "Name", value: null, htmlAttributes:
+                                    new { size="80", title="Investigation Name" })</td>
+            </tr>
+            <tr>
+                <td>Description:</td>
+                <td>@Html.TextArea(name:"Description", value:null, rows:5, columns:60, htmlAttributes:null)</td>
+            </tr>
+            <tr>
+                <td colspan="2"><input name="Submit" type="submit" value="Create Investigation" /></td>
+            </tr>
+        </table>     
+    }
+</div>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="84d1a5b6a6c043ab8c7b0fb50a397167" Name="Diagram1" ZoomLevel="82">
+        <EntityTypeShape EntityType="stringDaeModel.ENTITY_INVESTIGATION_ENVIRONMENT" Width="1.5" PointX="5" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="stringDaeModel.ENTITY_NOTES" Width="1.5" PointX="8" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="stringDaeModel.ENTITY_QUESTIONS" Width="1.5" PointX="8" PointY="22" IsExpanded="true" />
+        <EntityTypeShape EntityType="stringDaeModel.ENTITY_REFERENCE_SOURCE" Width="1.5" PointX="11" PointY="34.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="stringDaeModel.ENTITY_TYPES" Width="1.5" PointX="5.75" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="stringDaeModel.Environment" Width="1.5" PointX="0.5" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="stringDaeModel.EVENT" Width="1.5" PointX="10.25" PointY="23.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="stringDaeModel.GROUP_EVENT" Width="1.5" PointX="15.5" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="stringDaeModel.GROUP" Width="1.5" PointX="10.25" PointY="17.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="stringDaeModel.Investigation" Width="1.5" PointX="2.75" PointY="37.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="stringDaeModel.Investigation_status" Width="1.5" PointX="5" PointY="35.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="stringDaeModel.InvestigationRelationship_status" Width="1.5" PointX="5" PointY="39.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="stringDaeModel.LOCATION_EVENT" Width="1.5" PointX="15.5" PointY="31.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="stringDaeModel.LOCATION_GROUP" Width="1.5" PointX="15.5" PointY="26.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="stringDaeModel.LOCATION_OBJECT" Width="1.5" PointX="21.5" PointY="30.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="stringDaeModel.LOCATION_PERSON" Width="1.5" PointX="18.5" PointY="32.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="stringDaeModel.LOCATION_PERSON_TYPE" Width="1.5" PointX="16.25" PointY="36.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="stringDaeModel.LOCATION" Width="1.5" PointX="2.75" PointY="47.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="stringDaeModel.NOTE" Width="1.5" PointX="5" PointY="20.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="stringDaeModel.OBJECT_EVENT" Width="1.5" PointX="18.5" PointY="27.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="stringDaeModel.OBJECT_GROUP" Width="1.5" PointX="15.5" PointY="21.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="stringDaeModel.OBJECT_TYPES" Width="1.5" PointX="5" PointY="48.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="stringDaeModel.OBJECT" Width="1.5" PointX="13.25" PointY="29.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="stringDaeModel.PERSON_ATTRIBUTION" Width="1.5" PointX="21.5" PointY="17.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="stringDaeModel.PERSON_EVENT" Width="1.5" PointX="18.5" PointY="17.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="stringDaeModel.PERSON_GROUP" Width="1.5" PointX="18.5" PointY="22.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="stringDaeModel.PERSON_GROUP_TYPE" Width="1.5" PointX="16.25" PointY="12.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="stringDaeModel.PERSON_ID" Width="1.5" PointX="21.5" PointY="27" IsExpanded="true" />
+        <EntityTypeShape EntityType="stringDaeModel.PERSON_ID_TYPES" Width="1.5" PointX="11" PointY="30.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="stringDaeModel.PERSON_OBJECT" Width="1.5" PointX="24.5" PointY="27.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="stringDaeModel.PERSON_PERSON" Width="1.5" PointX="24.5" PointY="22.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="stringDaeModel.PERSON" Width="1.5" PointX="13.25" PointY="19.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="stringDaeModel.QUESTION" Width="1.5" PointX="8" PointY="16.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="stringDaeModel.REFERENCE_SOURCE" Width="1.5" PointX="2.75" PointY="54" IsExpanded="true" />
+        <EntityTypeShape EntityType="stringDaeModel.RELATIONSHIP" Width="1.5" PointX="5" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="stringDaeModel.STOCK_GROUP_TYPES" Width="1.5" PointX="5.125" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="stringDaeModel.STOCK_LOCATION_TYPES" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="stringDaeModel.STOCK_REASONS_FOR_INCLUSION" Width="1.5" PointX="7" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="stringDaeModel.TIMELINE_EVENT" Width="1.5" PointX="21.25" PointY="22.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="stringDaeModel.TIMELINE" Width="1.5" PointX="13" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="stringDaeModel.User" Width="1.5" PointX="0.5" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="stringDaeModel.FK__ENTITY_IN__ENTIT__6A3BB341" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__ENTITY_IN__ID_EN__72D0F942" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__ENTITY_IN__ID_EV__6C23FBB3" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__ENTITY_IN__ID_GR__6FF48C97" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__ENTITY_IN__ID_IN__73C51D7B" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__ENTITY_IN__ID_LO__6D181FEC" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__ENTITY_IN__ID_NO__6B2FD77A" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__ENTITY_IN__ID_OB__6F00685E" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__ENTITY_IN__ID_PE__6E0C4425" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__ENTITY_IN__ID_QU__70E8B0D0" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__ENTITY_NO__ENTIT__76A18A26" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__ENTITY_NO__ID_EN__7F36D027" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__ENTITY_NO__ID_EV__7889D298" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__ENTITY_NO__ID_GR__7C5A637C" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__ENTITY_NO__ID_IN__002AF460" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__ENTITY_NO__ID_LO__797DF6D1" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__ENTITY_NO__ID_NO__7795AE5F" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__ENTITY_NO__ID_OB__7B663F43" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__ENTITY_NO__ID_PE__7A721B0A" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__ENTITY_NO__ID_QU__7D4E87B5" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__ENTITY_QU__ENTIT__0307610B" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__ENTITY_QU__ID_EN__0AA882D3" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__ENTITY_QU__ID_EV__03FB8544" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__ENTITY_QU__ID_GR__07CC1628" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__ENTITY_QU__ID_IN__0B9CA70C" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__ENTITY_QU__ID_LO__04EFA97D" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__ENTITY_QU__ID_OB__06D7F1EF" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__ENTITY_QU__ID_PE__05E3CDB6" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__ENTITY_QU__ID_QU__08C03A61" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__ENTITY_RE__ENTIT__5BED93EA" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__ENTITY_RE__ID_EN__6482D9EB" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__ENTITY_RE__ID_EV__5DD5DC5C" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__ENTITY_RE__ID_GR__61A66D40" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__ENTITY_RE__ID_LO__5ECA0095" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__ENTITY_RE__ID_OB__60B24907" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__ENTITY_RE__ID_PE__5FBE24CE" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__ENTITY_RE__ID_QU__629A9179" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__ENTITY_RE__ID_RE__5CE1B823" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__EVENTS__ID_ENVIR__2F1AED73" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__GROUP_EVE__ID_EN__4C764630" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__GROUPS__ID_ENVIR__44160A59" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__Investiga__ID_EN__0FA2421A" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__LOCATION___ID_EN__2744C181" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__LOCATION___ID_EN__31C24FF4" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__LOCATION___ID_EN__45C948A1" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__LOCATION___ID_EN__5DA0D232" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__LOCATIONS__ID_EN__35C7EB02" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__NOTES__ID_ENVIRO__48DABF76" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__OBJECT_EV__ID_EN__386F4D83" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__OBJECT_GR__ID_EN__644DCFC1" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__OBJECTS__ID_ENVI__3C74E891" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__PERSON_AT__ID_EN__133DC8D4" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__PERSON_EV__ID_EN__2097C3F2" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__PERSON_GR__ID_EN__56F3D4A3" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__PERSON_OB__ID_EN__3F1C4B12" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__PERSON_PE__ID_EN__70B3A6A6" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__PERSONS__ID_ENVI__249D5F00" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__QUESTIONS__ID_EN__4D9F7493" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__REFERENCE__ID_EN__5634BA94" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__RELATIONS__ID_EN__691284DE" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__TIMELINE___ID_EN__19EAC663" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__TIMELINES__ID_EN__526429B0" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__EVENTS__ID_IRS__2C3E80C8" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__EVENTS__ID_IS__2D32A501" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__GROUP_EVE__ID_EV__48A5B54C" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__LOCATION___ID_EV__2374309D" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__OBJECT_EV__ID_EV__349EBC9F" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__PERSON_EV__ID_EV__1CC7330E" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__TIMELINE___ID_EV__161A357F" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__GROUP_EVE__ID_GR__4999D985" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__GROUP_EVE__ID_IN__4B8221F7" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__GROUPS__ID_IRS__422DC1E7" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__LOCATION___ID_GR__59D0414E" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__OBJECT_GR__ID_GR__607D3EDD" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__PERSON_GR__ID_GR__532343BF" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__Investiga__ID_IN__1372D2FE" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__Investiga__ID_IN__174363E2" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__LOCATION___ID_IN__26509D48" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__LOCATION___ID_IN__30CE2BBB" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__LOCATION___ID_IN__44D52468" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__LOCATION___ID_IN__5CACADF9" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__NOTES__ID_INVEST__47E69B3D" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__OBJECT_EV__ID_IN__377B294A" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__OBJECT_GR__ID_IN__6359AB88" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__OBJECT_TY__ID_IN__1B13F4C6" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__PERSON_AT__ID_IN__1249A49B" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__PERSON_EV__ID_IN__1FA39FB9" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__PERSON_GR__ID_IN__55FFB06A" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__PERSON_OB__ID_IN__3E2826D9" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__PERSON_PE__ID_IN__6FBF826D" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__QUESTIONS__ID_IN__4CAB505A" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__RELATIONS__ID_IN__681E60A5" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__TIMELINE___ID_IN__18F6A22A" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__TIMELINES__ID_IN__51700577" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__OBJECTS__ID_IS__3A8CA01F" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__PERSONS__ID_IS__22B5168E" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__OBJECTS__ID_IRS__39987BE6" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__PERSONS__ID_IRS__21C0F255" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__LOCATION___ID_LO__246854D6" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__LOCATION___ID_LO__5AC46587" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__LOCATION___ID_LO__42ECDBF6" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__LOCATION___ID_OB__41F8B7BD" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__LOCATION___ID_LO__2EE5E349" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__LOCATION___ID_PE__2DF1BF10" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__LOCATION___LP_TY__2CFD9AD7" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__PERSON_AT__ID_NO__0E7913B7" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__OBJECT_EV__ID_OB__3592E0D8" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__OBJECT_GR__ID_OB__61716316" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__OBJECTS__ID_OBJE__38A457AD" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__PERSON_OB__ID_OB__3C3FDE67" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__PERSON_AT__ID_PE__0F6D37F0" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__PERSON_AT__ID_QU__10615C29" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__PERSON_EV__ID_PE__1DBB5747" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__PERSON_GR__ID_PE__541767F8" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__PERSON_GR__PG_TY__522F1F86" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__PERSON_ID__ID_PE__2962141D" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__PERSON_ID__ID_TY__286DEFE4" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__PERSONS__ID_TYPE__20CCCE1C" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__PERSON_OB__ID_PE__3B4BBA2E" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__PERSON_PE__ID_PE__6BEEF189" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__PERSON_PE__ID_PE__6CE315C2" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__PERSON_PE__ID_RE__6DD739FB" ManuallyRouted="false" />
+        <AssociationConnector Association="stringDaeModel.FK__TIMELINE___ID_TI__170E59B8" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,37 @@
+@model IEnumerable<StringDae.PERSON>
+@using GridMvc.Html
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>People</h2>
+
+<p>
+    @Html.ActionLink("Add new person", "Create")
+</p>
+
+@Html.Grid(Model).Columns(columns =>
+{
+    /* Adding not mapped column, that renders body, using inline Razor html helper */
+    columns.Add(o => o.ID)
+        .Encoded(false)
+        .Sanitized(false)
+        .SetWidth(120)
+        .Titled(" ")
+        .RenderValueAs(o =>
+                @<b>
+                    @Html.ActionLink("Edit", "Edit", new { id=o.ID } ) |
+                    @Html.ActionLink("View", "Details", new { id=o.ID })
+                </b>);
+ 
+    columns.Add(o => o.Name).Titled("Name").SetWidth(100);
+    columns.Add(o => o.LAST_NAME).Titled("Last Name").SetWidth(100).Filterable(true); 
+    columns.Add(o => o.RACE).Titled("Race").SetWidth(100);
+    columns.Add(o => o.Description).Titled("Description").SetWidth(400);
+    columns.Add(o => o.GENDER).Titled("Gender").SetWidth(100);
+ 
+ 
+}).WithPaging(12).Sortable(true).Filterable().WithMultipleFilters()
+
+

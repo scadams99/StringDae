@@ -1,0 +1,71 @@
+@model StringDae.PERSON
+
+@{
+    ViewBag.Title = @Model.Name;
+}
+
+<fieldset>
+    <legend>@Model.Name</legend>
+
+    <table >
+        <tr>
+            <th>Last Name</th>
+            <td style="width:200px;">@Model.LAST_NAME</td>
+            <td style="width:20px;">&nbsp;</td>
+            <th>Height</th>
+            <td style="width:100px;">@String.Format("{0:F}", Model.HEIGHT)</td>
+            <td style="width:20px;">&nbsp;</td>
+            <th>Date of Birth</th>
+            <td style="width:100px;">@String.Format("{0:g}", Model.BIRTH_DATE)</td>
+        </tr>
+        <tr>
+            <th>Race</th>
+            <td>@Model.RACE</td>
+            <td style="width:20px;">&nbsp;</td>
+            <th>Weight</th>
+            <td>@String.Format("{0:F}", Model.WEIGHT)</td>
+            <td style="width:20px;">&nbsp;</td>
+            <th>Date of Death</th>
+            <td>@String.Format("{0:g}", Model.DATE_OF_DEATH)</td>
+        </tr>
+        <tr>
+            <th>Gender</th>
+            <td>@Model.GENDER</td>
+            <td style="width:20px;">&nbsp;</td>
+            <th></th>
+            <td></td>
+            <td style="width:20px;">&nbsp;</td>
+            <th>Age</th>
+            <td>@Model.Age @(Model.Age == null ? "" : @String.Format("{0:g}", Model.Age_as_of))</td>
+        </tr>
+        <tr>
+            <th>Investigations</th>
+            <td>@(Model.ENTITY_INVESTIGATION_ENVIRONMENT == null ? "None" : Model.ENTITY_INVESTIGATION_ENVIRONMENT.Count.ToString())</td>
+            <td style="width:20px;">&nbsp;</td>
+            <th>Eye Color</th>
+            <td>@Model.EYE_COLOR</td>
+        </tr>
+        <tr>
+            <th>Groups</th>
+            <td>@(Model.PERSON_GROUP == null ? "None" : Model.PERSON_GROUP.Count.ToString())</td>
+            <td style="width:20px;">&nbsp;</td>
+            <th>Complexion</th>
+            <td>@Model.COMPLEXTION</td>
+        </tr>
+        <tr>
+            <th>Description</th>
+            <td colspan="4">@Model.Description</td>
+        </tr>
+
+    </table>
+
+</fieldset>
+<p>
+    @Html.ActionLink("Delete", "Delete", new { id=Model.ID }, 
+        new { onclick = "return confirm('Are you sure you wish to delete this person?');" }) | 
+
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+

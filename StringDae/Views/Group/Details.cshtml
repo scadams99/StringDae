@@ -1,0 +1,33 @@
+@model StringDae.GROUP
+
+@{
+    ViewBag.Title = "Group";
+}
+
+<legend>@Model.Name</legend>
+
+    <table >
+        <tr>
+            <th>Group Type</th>
+            <td>@Model.GROUP_TYPE</td>
+            <td style="width:20px;">&nbsp;</td>
+            <th>Number Of Members</th>
+            <td>@(Model.PERSON_GROUP == null ? "None" : Model.PERSON_GROUP.Count.ToString())</td>
+            <td style="width:20px;">&nbsp;</td>
+            <th></th>
+            <td></td>
+        </tr>
+        
+        <tr>
+            <th>Description</th>
+            <td colspan="4">@Model.Description</td>
+        </tr>
+
+
+    </table>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+

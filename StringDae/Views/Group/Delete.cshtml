@@ -1,0 +1,77 @@
+@model StringDae.GROUP
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>GROUP</legend>
+
+    <div class="display-label">Name</div>
+    <div class="display-field">@Model.Name</div>
+
+    <div class="display-label">GROUP_TYPE</div>
+    <div class="display-field">@Model.GROUP_TYPE</div>
+
+    <div class="display-label">Description</div>
+    <div class="display-field">@Model.Description</div>
+
+    <div class="display-label">ID_IRS</div>
+    <div class="display-field">@Model.ID_IRS</div>
+
+    <div class="display-label">Created_date</div>
+    <div class="display-field">@String.Format("{0:g}", Model.Created_date)</div>
+
+    <div class="display-label">Created_by</div>
+    <div class="display-field">@Model.Created_by</div>
+
+    <div class="display-label">Modified_by</div>
+    <div class="display-field">@Model.Modified_by</div>
+
+    <div class="display-label">Modified_date</div>
+    <div class="display-field">@String.Format("{0:g}", Model.Modified_date)</div>
+
+    <div class="display-label">ID_ENVIRONMENT</div>
+    <div class="display-field">@Model.ID_ENVIRONMENT</div>
+
+    <div class="display-label">ENTITY_INVESTIGATION_ENVIRONMENT</div>
+    <div class="display-field">@(Model.ENTITY_INVESTIGATION_ENVIRONMENT == null ? "None" : Model.ENTITY_INVESTIGATION_ENVIRONMENT.Count.ToString())</div>
+
+    <div class="display-label">ENTITY_NOTES</div>
+    <div class="display-field">@(Model.ENTITY_NOTES == null ? "None" : Model.ENTITY_NOTES.Count.ToString())</div>
+
+    <div class="display-label">ENTITY_QUESTIONS</div>
+    <div class="display-field">@(Model.ENTITY_QUESTIONS == null ? "None" : Model.ENTITY_QUESTIONS.Count.ToString())</div>
+
+    <div class="display-label">ENTITY_REFERENCE_SOURCE</div>
+    <div class="display-field">@(Model.ENTITY_REFERENCE_SOURCE == null ? "None" : Model.ENTITY_REFERENCE_SOURCE.Count.ToString())</div>
+
+    <div class="display-label">Environment</div>
+    <div class="display-field">@(Model.Environment == null ? "None" : Model.Environment.Name)</div>
+
+    <div class="display-label">GROUP_EVENT</div>
+    <div class="display-field">@(Model.GROUP_EVENT == null ? "None" : Model.GROUP_EVENT.Count.ToString())</div>
+
+    <div class="display-label">InvestigationRelationship_status</div>
+    <div class="display-field">@(Model.InvestigationRelationship_status == null ? "None" : Model.InvestigationRelationship_status.Name)</div>
+
+    <div class="display-label">LOCATION_GROUP</div>
+    <div class="display-field">@(Model.LOCATION_GROUP == null ? "None" : Model.LOCATION_GROUP.Count.ToString())</div>
+
+    <div class="display-label">OBJECT_GROUP</div>
+    <div class="display-field">@(Model.OBJECT_GROUP == null ? "None" : Model.OBJECT_GROUP.Count.ToString())</div>
+
+    <div class="display-label">PERSON_GROUP</div>
+    <div class="display-field">@(Model.PERSON_GROUP == null ? "None" : Model.PERSON_GROUP.Count.ToString())</div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}
+
+

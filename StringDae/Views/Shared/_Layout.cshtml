@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - StringDae</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/css")
+    <link href="~/Content/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    @Scripts.Render("~/bundles/javascript")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryui")
+    @Styles.Render("~/Content/themes/base/css")
+    <script src="/Scripts/modernizr-2.6.2.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js" type="text/javascript"></script>
+    <script src="~/Scripts/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="~/Scripts/gridmvc.min.js"></script>
+
+</head>
+<body class="mainBodyStyleGroup">
+
+    <div class="container">
+        <div id="header">
+            <div class="HeaderLeft">
+            </div>
+            <div class="HeaderRight">
+                <h1 style="font: 'Comic Sans MS', cursive">StringDae</h1>
+                Investigate, track, relate, SOLVE!
+            </div>
+        </div>
+        <div class="clearfloat"></div>
+        <!-- end .header -->
+<<<<<<< HEAD
+        <a href="/person/index">Person List</a> | <a href="/person/Create">Person Add</a> | <a href="/group/index">Group List</a> | <a href="/group/Create">Group Add</a><br />
+=======
+        <ul id="nav">
+            <li>Person
+                <ul>
+                    <li><a href="/person/index">List</a></li>
+                    <li><a href="/person/Create">Add</a></li>
+                </ul>
+                <li>Group
+                    <ul>
+                        <li><a href="/group/index">List</a></li>
+                        <li><a href="/group/Create">Add</a></li>
+                    </ul>
+                    <li>Event
+                        <ul>
+                            <li><a href="/Event/index">List</a></li>
+                            <li><a href="/Event/Create">Add</a></li>
+                        </ul>
+                    </li>
+            <li>Object
+                <ul>
+                    <li><a href="/Object/index">List</a></li>
+                    <li><a href="/Object/Create">Add</a></li>
+                </ul>
+            </li>
+            <li>Timeline
+                <ul>
+                    <li><a href="/Timeline/index">List</a></li>
+                    <li><a href="/Timeline/Create">Add</a></li>
+                </ul>
+            </li>
+            <li>Annotations
+                <ul>
+                    <li>Questions
+                        <ul>
+                            <li><a href="/Questions/index">List</a></li>
+                            <li><a href="/Questions/Create">Add</a></li>
+                        </ul>
+                    </li>
+                    <li>Notes
+                        <ul>
+                            <li><a href="/Notes/index">List</a></li>
+                            <li><a href="/Notes/Create">Add</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <script>
+            $("#nav").menu({ position: { at: "left bottom" } });
+        </script>
+>>>>>>> Commit from pc
+
+        <div id="mainContent">
+            @RenderBody()
+        </div>
+        <!-- end #mainContent -->
+
+        <br class="clearfloat" />
+        <div id="footer">
+            <p>Footer</p>
+
+        </div>
+        <!-- end #footer -->
+    </div>
+    <!-- end #container -->
+
+
+    @RenderSection("scripts", required: false)
+    <script>
+        $(function () {
+            $("#accordion").accordion();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+@model StringDae.PERSON
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>PERSON</legend>
+
+    <div class="display-label">Name</div>
+    <div class="display-field">@Model.Name</div>
+
+    <div class="display-label">LAST_NAME</div>
+    <div class="display-field">@Model.LAST_NAME</div>
+
+    <div class="display-label">IDENTIFIER</div>
+    <div class="display-field">@Model.IDENTIFIER</div>
+
+    <div class="display-label">ID_TYPE</div>
+    <div class="display-field">@Model.ID_TYPE</div>
+
+    <div class="display-label">Description</div>
+    <div class="display-field">@Model.Description</div>
+
+    <div class="display-label">SCALE</div>
+    <div class="display-field">@Model.SCALE</div>
+
+    <div class="display-label">HEIGHT</div>
+    <div class="display-field">@String.Format("{0:F}", Model.HEIGHT)</div>
+
+    <div class="display-label">WEIGHT</div>
+    <div class="display-field">@String.Format("{0:F}", Model.WEIGHT)</div>
+
+    <div class="display-label">RACE</div>
+    <div class="display-field">@Model.RACE</div>
+
+    <div class="display-label">HAIR_COLOR</div>
+    <div class="display-field">@Model.HAIR_COLOR</div>
+
+    <div class="display-label">EYE_COLOR</div>
+    <div class="display-field">@Model.EYE_COLOR</div>
+
+    <div class="display-label">COMPLEXTION</div>
+    <div class="display-field">@Model.COMPLEXTION</div>
+
+    <div class="display-label">GENDER</div>
+    <div class="display-field">@Model.GENDER</div>
+
+    <div class="display-label">BIRTH_DATE</div>
+    <div class="display-field">@String.Format("{0:g}", Model.BIRTH_DATE)</div>
+
+    <div class="display-label">DATE_OF_DEATH</div>
+    <div class="display-field">@String.Format("{0:g}", Model.DATE_OF_DEATH)</div>
+
+    <div class="display-label">PERSON_STATUS</div>
+    <div class="display-field">@Model.PERSON_STATUS</div>
+
+    <div class="display-label">IMPORTANCE</div>
+    <div class="display-field">@Model.IMPORTANCE</div>
+
+    <div class="display-label">ID_IRS</div>
+    <div class="display-field">@Model.ID_IRS</div>
+
+    <div class="display-label">ID_IS</div>
+    <div class="display-field">@Model.ID_IS</div>
+
+    <div class="display-label">Created_date</div>
+    <div class="display-field">@String.Format("{0:g}", Model.Created_date)</div>
+
+    <div class="display-label">Created_by</div>
+    <div class="display-field">@Model.Created_by</div>
+
+    <div class="display-label">Modified_by</div>
+    <div class="display-field">@Model.Modified_by</div>
+
+    <div class="display-label">Modified_date</div>
+    <div class="display-field">@String.Format("{0:g}", Model.Modified_date)</div>
+
+    <div class="display-label">ID_ENVIRONMENT</div>
+    <div class="display-field">@Model.ID_ENVIRONMENT</div>
+
+    <div class="display-label">Age</div>
+    <div class="display-field">@Model.Age</div>
+
+    <div class="display-label">Age_as_of</div>
+    <div class="display-field">@String.Format("{0:g}", Model.Age_as_of)</div>
+
+    <div class="display-label">ENTITY_INVESTIGATION_ENVIRONMENT</div>
+    <div class="display-field">@(Model.ENTITY_INVESTIGATION_ENVIRONMENT == null ? "None" : Model.ENTITY_INVESTIGATION_ENVIRONMENT.Count.ToString())</div>
+
+    <div class="display-label">ENTITY_NOTES</div>
+    <div class="display-field">@(Model.ENTITY_NOTES == null ? "None" : Model.ENTITY_NOTES.Count.ToString())</div>
+
+    <div class="display-label">ENTITY_QUESTIONS</div>
+    <div class="display-field">@(Model.ENTITY_QUESTIONS == null ? "None" : Model.ENTITY_QUESTIONS.Count.ToString())</div>
+
+    <div class="display-label">ENTITY_REFERENCE_SOURCE</div>
+    <div class="display-field">@(Model.ENTITY_REFERENCE_SOURCE == null ? "None" : Model.ENTITY_REFERENCE_SOURCE.Count.ToString())</div>
+
+    <div class="display-label">Environment</div>
+    <div class="display-field">@(Model.Environment == null ? "None" : Model.Environment.Name)</div>
+
+    <div class="display-label">Investigation_status</div>
+    <div class="display-field">@Html.DisplayTextFor(_ => Model.Investigation_status).ToString()</div>
+
+    <div class="display-label">InvestigationRelationship_status</div>
+    <div class="display-field">@(Model.InvestigationRelationship_status == null ? "None" : Model.InvestigationRelationship_status.Name)</div>
+
+    <div class="display-label">LOCATION_PERSON</div>
+    <div class="display-field">@(Model.LOCATION_PERSON == null ? "None" : Model.LOCATION_PERSON.Count.ToString())</div>
+
+    <div class="display-label">PERSON_ATTRIBUTION</div>
+    <div class="display-field">@(Model.PERSON_ATTRIBUTION == null ? "None" : Model.PERSON_ATTRIBUTION.Count.ToString())</div>
+
+    <div class="display-label">PERSON_EVENT</div>
+    <div class="display-field">@(Model.PERSON_EVENT == null ? "None" : Model.PERSON_EVENT.Count.ToString())</div>
+
+    <div class="display-label">PERSON_GROUP</div>
+    <div class="display-field">@(Model.PERSON_GROUP == null ? "None" : Model.PERSON_GROUP.Count.ToString())</div>
+
+    <div class="display-label">PERSON_ID</div>
+    <div class="display-field">@(Model.PERSON_ID == null ? "None" : Model.PERSON_ID.Count.ToString())</div>
+
+    <div class="display-label">PERSON_ID_TYPES</div>
+    <div class="display-field">@Html.DisplayTextFor(_ => Model.PERSON_ID_TYPES).ToString()</div>
+
+    <div class="display-label">PERSON_OBJECT</div>
+    <div class="display-field">@(Model.PERSON_OBJECT == null ? "None" : Model.PERSON_OBJECT.Count.ToString())</div>
+
+    <div class="display-label">PERSON_PERSON</div>
+    <div class="display-field">@(Model.PERSON_PERSON == null ? "None" : Model.PERSON_PERSON.Count.ToString())</div>
+
+    <div class="display-label">PERSON_PERSON1</div>
+    <div class="display-field">@(Model.PERSON_PERSON1 == null ? "None" : Model.PERSON_PERSON1.Count.ToString())</div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}
+
+

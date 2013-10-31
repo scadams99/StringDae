@@ -1,0 +1,77 @@
+@model StringDae.PERSON
+
+@* This partial view defines form fields that will appear when creating and editing entities *@
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.Name, new { style = "width: 500px;" })
+</div>
+
+<table style="">
+    <tr>
+        <th>Name</th>
+        <td>@Html.EditorFor(model => model.Name)</td>
+        <td>@Html.ValidationMessageFor(model => model.Name)</td>
+    </tr>
+    <tr>
+        <th>Last Name</th>
+        <td>@Html.EditorFor(model => model.LAST_NAME)</td>
+        <td>@Html.ValidationMessageFor(model => model.LAST_NAME)</td>
+    </tr>
+    <tr>
+        <th>Race</th>
+        <td>@Html.EditorFor(model => model.RACE)</td>
+        <td>@Html.ValidationMessageFor(model => model.RACE)</td>
+    </tr>
+    <tr>
+        <th>Gender</th>
+        <td>@Html.EditorFor(model => model.GENDER)</td>
+        <td>@Html.ValidationMessageFor(model => model.GENDER)</td>
+    </tr>
+    <tr>
+        <th>Description</th>
+        <td>@Html.EditorFor(model => model.Description)</td>
+        <td>@Html.ValidationMessageFor(model => model.Description)</td>
+    </tr>
+    <tr>
+        <th>Height</th>
+        <td>@Html.EditorFor(model => model.HEIGHT)</td>
+        <td>@Html.ValidationMessageFor(model => model.HEIGHT)</td>
+    </tr>
+    <tr>
+        <th>Weight</th>
+        <td>@Html.EditorFor(model => model.WEIGHT)</td>
+        <td>@Html.ValidationMessageFor(model => model.WEIGHT)</td>
+    </tr>
+    <tr>
+        <th>Eye Color</th>
+        <td>@Html.EditorFor(model => model.EYE_COLOR)</td>
+        <td>@Html.ValidationMessageFor(model => model.EYE_COLOR)</td>
+    </tr>
+    <tr>
+        <th>Complexion</th>
+        <td>@Html.EditorFor(model => model.COMPLEXTION)</td>
+        <td>@Html.ValidationMessageFor(model => model.COMPLEXTION)</td>
+    </tr>
+    <tr>
+        <th>Date of Birth</th>
+        <td>@Html.EditorFor(model => model.BIRTH_DATE)</td>
+        <td>@Html.ValidationMessageFor(model => model.BIRTH_DATE)</td>
+    </tr>
+    <tr>
+        <th>Date of Death</th>
+        <td>@Html.EditorFor(model => model.DATE_OF_DEATH)</td>
+        <td>@Html.ValidationMessageFor(model => model.DATE_OF_DEATH)</td>
+    </tr>
+    <tr>
+        <th>Age</th>
+        <td>@Html.EditorFor(model => model.Age)</td>
+        <td>@Html.ValidationMessageFor(model => model.Age)</td>
+    </tr>
+    <tr>
+        <th title="Date of age estimate">Age As Of</th>
+        <td>@Html.EditorFor(model => model.Age_as_of)</td>
+        <td>@Html.ValidationMessageFor(model => model.Age_as_of)</td>
+    </tr>
+
+</table>
+
